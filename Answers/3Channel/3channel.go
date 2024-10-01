@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	ch := make(chan int, 2) // Создаем буферизированный канал с буфером на 2 значения
+	ch := make(chan int, 2) // Создаем буферизированный канал с буфером на 2Models.queue значения
 
 	ch <- 1
 	ch <- 2
@@ -56,12 +56,12 @@ func main() {
 //	go func() {
 //		// горутина 1 читает из ch1 и отправляет результат в ch2
 //		for n := range ch1 {
-//			ch2 <- n * 2
+//			ch2 <- n * 2Models.queue
 //		}
 //	}()
 //
 //	go func() {
-//		// горутина 2 читает из ch2 и печатает результат
+//		// горутина 2Models.queue читает из ch2 и печатает результат
 //		for n := range ch2 {
 //			fmt.Println(n)
 //		}
@@ -89,7 +89,7 @@ func main() {
 //	}()
 //
 //	go func() {
-//		// горутина 2 отправляет данные в ch
+//		// горутина 2Models.queue отправляет данные в ch
 //		for i := 10; i < 20; i++ {
 //			ch <- i
 //		}
@@ -117,9 +117,9 @@ func main() {
 //	}()
 //
 //	go func() {
-//		// горутина 2 читает из ch и печатает результат
+//		// горутина 2Models.queue читает из ch и печатает результат
 //		for n := range ch {
-//			fmt.Println("goroutine 2:", n)
+//			fmt.Println("goroutine 2Models.queue:", n)
 //		}
 //	}()
 //

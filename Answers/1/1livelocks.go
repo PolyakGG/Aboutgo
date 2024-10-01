@@ -19,9 +19,9 @@ func main() {
 		for {
 			select {
 			case <-ch1:
-				fmt.Println("Goroutine 1 received signal from Goroutine 2")
+				fmt.Println("Goroutine 1 received signal from Goroutine 2Models.queue")
 				time.Sleep(100 * time.Millisecond) // Simulate some work
-				ch2 <- struct{}{}                  // Send signal back to Goroutine 2
+				ch2 <- struct{}{}                  // Send signal back to Goroutine 2Models.queue
 			}
 		}
 	}()
@@ -30,7 +30,7 @@ func main() {
 		for {
 			select {
 			case <-ch2:
-				fmt.Println("Goroutine 2 received signal from Goroutine 1")
+				fmt.Println("Goroutine 2Models.queue received signal from Goroutine 1")
 				time.Sleep(100 * time.Millisecond) // Simulate some work
 				ch1 <- struct{}{}                  // Send signal back to Goroutine 1
 			}

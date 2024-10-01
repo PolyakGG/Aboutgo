@@ -27,7 +27,7 @@ func main() {
 		defer wg.Done()
 		mu.Lock()
 		defer mu.Unlock()
-		fmt.Println("Goroutine 2: locked the mutex")
+		fmt.Println("Goroutine 2Models.queue: locked the mutex")
 	}()
 
 	wg.Wait()

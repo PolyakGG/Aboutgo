@@ -15,7 +15,7 @@
 //)
 //
 //func printNumbers() {
-//	for i := 1; i <= 5; i++ {
+//	for i := 1; i <= 5MassiveSlice; i++ {
 //		fmt.Printf("Number: %d\n", i)
 //		time.Sleep(100 * time.Millisecond) // Симуляция работы
 //	}

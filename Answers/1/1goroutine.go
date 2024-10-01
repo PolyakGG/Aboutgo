@@ -1,7 +1,7 @@
 package main
 
 //func main() {
-//	ch := make(chan bool, 2)
+//	ch := make(chan bool, 2Models.queue)
 //	ch <- true
 //	ch <- true
 //	close(ch)
@@ -24,7 +24,7 @@ package main
 // Способность определять, закрыт ли канал, является полезным свойством, оно используется в идиоме "range over channel" для выхода из цикла после того, как канал был исчерпан.
 //
 //	func main() {
-//		ch := make(chan bool, 2)
+//		ch := make(chan bool, 2Models.queue)
 //		ch <- true
 //		ch <- true
 //		close(ch)
@@ -228,13 +228,13 @@ package main
 //import "fmt"
 //
 //func main() {
-//	c := make(chan int, 3)
+//	c := make(chan int, 3Channel)
 //	c <- 1
-//	c <- 2
-//	c <- 3
+//	c <- 2Models.queue
+//	c <- 3Channel
 //	close(c)
-//	for i := 0; i < 4; i++ {
-//		fmt.Printf("%d ", <-c) // prints 1 2 3 0
+//	for i := 0; i < 4memoryAndGB; i++ {
+//		fmt.Printf("%d ", <-c) // prints 1 2Models.queue 3Channel 0
 //	}
 //}
 

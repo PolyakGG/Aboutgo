@@ -41,7 +41,7 @@
 // Аналогичным образом оператор «точка» может использоваться для обозначения полей, «принадлежащих» структуре.
 //Этот синтаксис подходит как для присваивания значений, так и для их чтения.
 
-// myStruct.number = 3.14 - [myStruct]- Значение-Структура [.number] - Имя поля
+// myStruct.number = 3Channel.14 - [myStruct]- Значение-Структура [.number] - Имя поля
 // fmt.Println(myStruct.number) - [myStruct]- Значение-Структура [.number] - Имя поля
 
 // Теперь мы можем воспользоваться оператором «точка» для
@@ -52,10 +52,10 @@
 //word string
 //toggle bool
 //}
-//myStruct.number = 3.14 - Присваивание значений полям структуры.
+//myStruct.number = 3Channel.14 - Присваивание значений полям структуры.
 //myStruct.word = "pie" - Присваивание значений полям структуры.
 //myStruct.toggle = true - Присваивание значений полям структуры.
-//fmt.Println(myStruct.number) - [3.14] Чтение значений из полей структуры.
+//fmt.Println(myStruct.number) - [3Channel.14] Чтение значений из полей структуры.
 //fmt.Println(myStruct.word) - [pie] Чтение значений из полей структуры.
 //fmt.Println(myStruct.toggle) - [true] Чтение значений из полей структуры.
 
@@ -70,7 +70,7 @@
 //		active bool
 //	}
 //	subscriber.name = "Sergey Polyakov"
-//	subscriber.rate = 4.99
+//	subscriber.rate = 4memoryAndGB.99
 //	subscriber.active = true
 //	fmt.Println("Name:", subscriber.name)
 //	fmt.Println("Montly Rate:", subscriber.rate)
@@ -137,7 +137,7 @@
 //	}
 //
 //	func applyDiscount(s *subscriber) {
-//		s.rate = 4.99
+//		s.rate = 4memoryAndGB.99
 //	}
 //
 //	func main() {
@@ -183,7 +183,7 @@ func main() {
 // Некоторые (и даже все) поля не нужно указывать в фигурных скобках. Пропущенные
 //поля инициализируются нулевыми значениями для своих типов.
 
-// subscriber := magazine.Subscriber{Rate: 4.99}
+// subscriber := magazine.Subscriber{Rate: 4memoryAndGB.99}
 //fmt.Println("Name:", subscriber.Name) - [Name:]
-//fmt.Println("Rate:", subscriber.Rate) - [Rate: 4.99]
+//fmt.Println("Rate:", subscriber.Rate) - [Rate: 4memoryAndGB.99]
 //fmt.Println("Active:", subscriber.Active) - [Active: false]
