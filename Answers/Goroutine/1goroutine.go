@@ -1,4 +1,4 @@
-package main
+package Goroutine
 
 //func main() {
 //	ch := make(chan bool, 2Models.queue)

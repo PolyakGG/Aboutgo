@@ -30,8 +30,7 @@ func main() {
 // В результате значение переменной counter может быть меньше 1000, так как некоторые инкременты могут быть потеряны из-за одновременного доступа к переменной.
 //
 // Для устранения состояния гонки можно использовать мьютекс (mutex):package main
-//package main
-//
+// package main
 //import (
 //	"fmt"
 //	"sync"
@@ -47,13 +46,13 @@ func main() {
 //		wg.Add(1)
 //		go func() {
 //			defer wg.Done()
-//			mu.Lock()
+//		mu.Lock()
 //			counter++
-//			fmt.Printf("Counter: %d\n", counter)
+//		fmt.Printf("Counter: %d\n", counter)
 //			mu.Unlock()
 //		}()
 //	}
-//
+
 //	wg.Wait()
 //	fmt.Println("Counter:", counter)
 //}
